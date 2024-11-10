@@ -1,0 +1,104 @@
+*,html { 
+    margin: 0; /*margin=jarak anatar yg lain dan padding=ukuran dari objectnya*/
+    padding: 0; /*kenapa dikasih 0 karena default dari htmlnya ada value sehingga ada gap diantaranya jadinya tidak full*/
+} /* gunanya nambahin * artinya untuk keseluruhan dari htmlnya */
+
+
+/*vh= vertikal height dan 100vh adalah maksudnya full tidak ada scroll dan kenapa vh supaya bisa full dan sesuai dengan layarnya saat dibuka dimana aja seperti adnroid ipad dll jadi totalnya harus 100vh jika ingin tidak ada scroll di websitenya */
+.container_navbar {
+    background-color: #004D98;
+    width: 100%;
+    height: 15vh;
+}
+
+.ul_navbar{
+    height: 100px;
+    display: flex; /*supaya menentukan urutannya ke arah horizontal yang sebelumnya menyusun ke bawah urutannya menjadi ke kanan pokonya untuk mengurutkan lah untuk bisa di atur posisinya*/
+    justify-content:center; /*agar dia berada di tengah antara space kanan kirinya*/
+    align-items: center; /*agar dia berada di tengah antara space atas bawahnya*/
+}
+
+.li_navbar{
+    /* border: 1px solid black; */
+    /* background-color: rgb(9, 14, 14); */
+    list-style-type:none; /*menghapus tanda poinnya menjadi polosan*/
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.a_navbar {
+    color: white;
+    text-decoration: none;  /* supaya tidak mucul underlinenya */
+    font-weight: 800; /*supaya tulisannya agak tebal*/
+}
+
+.img_navbar_1 {
+    margin-right: 100px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content:baseline;
+    align-items:center;
+}
+
+.img_navbar_2 {
+    margin-left: 100px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+
+.li_navbar:hover { /*gunanya yaitu saat mouse di arahkan ke li.navbar atau home,about me,contact me akan memunculkan sesuatu dan itu dinamakan hover*/
+    background-color: #EDBB00;
+    transition: .3s ease-in-out; /*nama transisinya adalah ease in out dan waktu transisinya selama 0.5s*/
+    transition-delay: .1s; /*gunanya biar saat sebelum masuk ke transisi akan didelay terlebih dahulu selama 0.2s*/
+    border-radius: 10px; /*tingkat kelengkungan ujungnya*/
+}
+
+.container_content_1 {
+    background-color: #A50044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.a_content_1 {
+    background-color: rgb(245, 243, 243);
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    width: 420px;
+    height: 350px;
+    display: flex;
+    flex-direction: column; /*untuk tulisannya atau paragrafnya turun menjadi dibawah logo*/
+    justify-content: space-evenly; /*membuat space atau gap antara tulisan dengan logo*/
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); /*dari box shadow dan dua dibawah ini berfungsi untuk membuat bayangan pada objek*/
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.img_content_1{
+    width: 60%;
+    height: 60%;
+}
+
+.container_footer {
+    height: 10vh;
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1_footer {
+    color:white;
+    font-size: 20px;
+}

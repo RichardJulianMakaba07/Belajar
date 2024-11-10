@@ -1,2 +1,2 @@
-# Python
+# Belajar
 ## Masih dalam proses belajar
